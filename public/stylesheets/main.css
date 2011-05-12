@@ -51,6 +51,9 @@ footer {
 	text-align: center;
 	width: 710px;
 	margin: 0 auto;
+	padding-top: .4em;
+	padding-bottom: .3em;
+	background-color: #f6f6ff;
 }
 footer nav {
 	float: none;
