@@ -1,6 +1,17 @@
-%h1 User information
-%table
-  %tr
-    %td= @user.name
-  %tr
-    %td= @user.email
+.profile
+  .main
+    %h1
+      = gravatar_for @user, :size => 30 
+      = @user.name
+  .sidebar
+    %table
+      %tr
+        %td
+          %strong Name
+        %td
+          = @user.name 
+      %tr
+        %td
+          %strong URL
+        %td
+          = link_to user_path(@user), @user

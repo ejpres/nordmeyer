@@ -40,14 +40,35 @@ section {
 	clear: both;
 	margin-top: 1em;
 	font-size: 120%;
-	padding: 20px;
 }
 section h1 {
 	font-weight: normal;
-	font-size: 200%;
+	margin-top: 0;
+}
+.profile {
+	padding-top: 1em;
+}
+.main {
+	float: left;
+	display: block;
+	width: 70%;
+	padding: 1em 0;
+}
+.sidebar {
+	display: block;
+	float: right;
+	width: 26%;
+	padding: 1em 2%;
+	background-color: #f6f6ff;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.profile img.gravatar{
+	margin-bottom: -5px;
 }
 
 footer {
+	clear: both;
 	text-align: center;
 	width: 710px;
 	margin: 0 auto;
@@ -55,6 +76,9 @@ footer {
 	padding-bottom: .3em;
 	background-color: #f6f6ff;
 }
+
+
+
 footer nav {
 	float: none;
 }
