@@ -10,22 +10,21 @@ body {
 }
 
 header {
-	padding-top: 20px;
+	height: 75px;
+	margin-bottom: 10px;
+	border-bottom: solid 1px #ddd;
 }
 
 header img {
 	display: block;
 	float: left;
-	padding: 0 1em;
+	padding: 0 1em 0 0;
 }
 
 nav {
 	float: right;
 }
-nav {
-	padding: 0 0.7em;
-	white-space: nowrap;
-}
+
 nav ul{
 	margin: 0;
 	padding: 0;
@@ -38,7 +37,6 @@ nav ul li {
 
 section {
 	clear: both;
-	margin-top: 1em;
 	font-size: 120%;
 }
 section h1 {
@@ -46,25 +44,39 @@ section h1 {
 	margin-top: 0;
 }
 .profile {
-	padding-top: 1em;
 }
 .main {
 	float: left;
 	display: block;
 	width: 70%;
-	padding: 1em 0;
+	padding: 10px 0;
 }
 .sidebar {
 	display: block;
 	float: right;
 	width: 26%;
 	padding: 1em 2%;
+	margin-bottom: 10px;
 	background-color: #f6f6ff;
 	border-top-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 .profile img.gravatar{
 	margin-bottom: -5px;
+}
+
+.field {
+	margin-top: 1em;
+}
+.field label {
+	padding-right: 1em;
+	display: table;
+}
+.field input {
+	display: table;
+}
+.actions {
+	margin: 1em 0;
 }
 
 footer {
@@ -74,7 +86,7 @@ footer {
 	margin: 0 auto;
 	padding-top: .4em;
 	padding-bottom: .3em;
-	background-color: #f6f6ff;
+	border-top: solid 1px #ddd;
 }
 
 
@@ -83,6 +95,61 @@ footer nav {
 	float: none;
 }
 
+/**** Flash ****/
+
+.flash {
+	clear: both;
+	width: 100%;
+	background-color: #f6f6ff;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 0;
+	color: #d00;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-bottom: 10px;
+	
+}
+
+/**** Errors ****/
+
+.field_with_errors input{
+  border: solid 2px #c00;
+}
+
+.field_with_errors label{
+	color: #c00;
+}
+
+#error_explanation {
+	width: 66%;
+	border: 2px solid #d00;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f6f6ff;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
 
 /**** Links ****/
 
